@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laberinto Pixel Art</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        <button id="editor-toggle">Editor</button>
+        <div id="editor" style="display:none;">
+            <div>
+                <button id="create-wall">Crear Pared</button>
+                <button id="remove-wall">Eliminar Pared</button>
+            </div>
+            <div>
+                <textarea id="editor-text" rows="10" cols="30"></textarea>
+                <button id="update-lab">Actualizar Laberinto</button>
+            </div>
+        </div>
+        <div id="game-over" style="display:none;">
+            <p>¡Game Over! <button id="restart-game">Reiniciar</button></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

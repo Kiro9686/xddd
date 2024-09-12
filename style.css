@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+}
+
+canvas {
+    border: 1px solid white;
+    background-color: black;
+}
+
+#editor {
+    margin-top: 10px;
+}
+
+textarea {
+    width: 100%;
+    font-family: monospace;
+}
+
+button {
+    margin-top: 5px;
+}
+
+#gameCanvas.create-wall-cursor {
+    cursor: url('icons/create-wall-icon.png'), auto;
+}
+
+#gameCanvas.remove-wall-cursor {
+    cursor: url('icons/remove-wall-icon.png'), auto;
+}
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+#gameCanvas.chaser-icon {
+    size: 5px 5px('icons/chaser-icon.png');
+    
+}
